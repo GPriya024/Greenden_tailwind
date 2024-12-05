@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+
+        .middle {
+            background-color: black;
+            padding: 5px;
+            color: white;
+        }
+
+        .header {
+            background-color: blue;
+            padding: 5px;
+            color: white;
+        }
+
+        .footer {
+            background-color: blue;
+            padding: 5px;
+            color: white;
+        }
+
+        .one {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height: 100px;
+        }
+
+        .main-container {
+            background-color: lightgreen;
+            border-right: solid black 1px;
+            margin: 2px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        .sidebar {
+            background-color: violet;
+            border-right: solid black 1px;
+            margin: 2px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .two {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            height: 100px;
+            margin: 2px;
+        }
+        .sidebar1 {
+            background-color: orange;
+            border-right: solid black 1px;
+            margin: 2px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .sidebar2 {
+            background-color: orange;
+            border-right: solid black 1px;
+            margin: 2px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="middle">
+
+            <div class="one">
+                <div class="main-container">Main container</div>
+                <div class="sidebar">Sidebar</div>
+            </div>
+            <div class="two">
+                <div class="sidebar1">Sidebar1</div>
+                <div class="sidebar2">Sidebar2</div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

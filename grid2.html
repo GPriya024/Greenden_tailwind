@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+            background-color: lightblue;
+
+            padding: 10px;
+        }
+
+        .header {
+            background-color: green;
+            padding: 20px;
+            color: white;
+
+            margin: 20px;
+            color: white;
+        }
+
+        .footer {
+            background-color: green;
+            padding: 20px;
+            color: white;
+
+            margin: 20px;
+            color: white;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            height: 300px;
+            margin: 20px;
+
+        }
+
+        .aside {
+            background-color: lightgreen;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+        }
+
+        .article {
+            background-color: orange;
+            display: grid;
+            color: white;
+        }
+
+        .wrap {
+            display: flex;
+            gap: 10px;
+            justify-content: space-around;
+        }
+
+        .im {
+            display: inline-block;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: solid white 1px;
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="section">
+            <div class="aside">
+                <h2>Aside</h2>
+            </div>
+            <div class="article">
+                <h2>Article</h2>
+                <div class="wrap">
+                    <div class="im">Image</div>
+                    <div class="im">Image</div>
+                    <div class="im">Image</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>
